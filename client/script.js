@@ -123,7 +123,7 @@ const handleSubmit = async (e) => {
   console.log(!false)
 
   if (lmao == false) {
-    const response = await fetch("http://localhost:5000", {
+    const response = await fetch("https://meerai.onrender.com", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
