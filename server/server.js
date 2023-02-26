@@ -6,7 +6,7 @@ import { Configuration, OpenAIApi } from "openai";
 dotenv.config();
 
 const configuration = new Configuration({
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey: "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",
 })
 
 const openai = new OpenAIApi(configuration);
@@ -17,7 +17,7 @@ app.use(express.json());
 
 app.get('/', async (req, res) => {
     res.status(200).send({
-        message: "Hello World",
+        message: "Server is working!",
     })
 })
 
